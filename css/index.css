@@ -1,0 +1,18 @@
+#tab{
+    /* height: 15%; */
+    /* width: auto; */
+    background: -webkit-linear-gradient(left, #44B8DC ,#3480D4);
+}
+#myInput{
+    width: 60%;
+}
+.home_logo{
+    height: 100%;
+    width: 200px;
+    /* border-radius: 50%;
+    border: 2px solid yellow; */
+    /* ใสาให้เคลื่อนไหว ค่อบลบ */
+    /* -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate; */
+   
+}
