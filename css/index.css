@@ -3,9 +3,18 @@
     /* width: auto; */
     background: -webkit-linear-gradient(left, #44B8DC ,#3480D4);
 }
+
 #myInput{
-    width: 60%;
+    width: 70%;
 }
+
+#ml{
+    margin-left: 50px;
+}
+/* #icon{
+    font-size:auto;
+    color:#f39c12;
+} */
 .home_logo{
     height: 100%;
     width: 200px;
@@ -14,5 +23,5 @@
     /* ใสาให้เคลื่อนไหว ค่อบลบ */
     /* -webkit-animation: mover 2s infinite  alternate;
     animation: mover 1s infinite  alternate; */
-   
 }
+   
