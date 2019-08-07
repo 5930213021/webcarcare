@@ -54,14 +54,14 @@
         </div>
       </div>
       <div class="col-sm-12 mb-4">
-        <button type="button" class="btn btn-1">เข้าสู่ระบบ</button>
+        <button type="button" class="btn btn-1" onclick="home();">เข้าสู่ระบบ</button>
       </div>
       <div class="col-sm-12">
           <div class="d-flex justify-content-center links">
               หากคุณยังไม่เคยเข้าใช้งานกรุณา
-          <a href="#" class="link">สมัครสมาชิก</a>
+          <a href="register.html" class="link">สมัครสมาชิก</a>
           &nbsp; ,คุณ 
-          <a href="forgotpasspage.html">ลืมรหัสผ่าน?</a>
+          <a href="forgotpassword.html">ลืมรหัสผ่าน?</a>
           </div>
         </div>
     </div>
@@ -70,5 +70,12 @@
   </div>
 
 </body>
+<script>
+    function home(){     
+      console.log("true");
+      window.location.href = ("home.html");
+
+    }
+    </script>
 
 </html>
