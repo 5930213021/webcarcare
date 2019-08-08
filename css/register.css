@@ -1,0 +1,41 @@
+.form-group{
+    margin-bottom: 1rem;
+    text-align: -webkit-center;
+}
+.form-control {
+    display: block;
+    width: 30%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(0, 0, 0); 
+    background-color: rgba(255, 255, 255, 0.2);
+    background-clip: padding-box;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.inputWithIcon input[type=text]{
+    padding-left: 40px;
+}
+.inputWithIcon{
+    position: relative;
+
+}
+.inputWithIcon i{
+    position: absolute;
+    left: 35.5%;
+    top: 4px;
+    padding: 9px 8px;
+    transition: .3s;
+    color: rgb(155, 155, 155);
+}
+.inputWithIcon input[type=text]:focus + i{
+    color: rgb(155, 155, 155);
+}
+
+#pad{
+    padding-left: -15px;
+    padding-right: -15px;
+}

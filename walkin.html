@@ -31,9 +31,15 @@
 </head>
 
 <body>
-    <div class="container" style="margin-top :60px;">
-        <h3 class="name">เพิ่มรายการ</h3>
-        <button type="submit" class="btn btn-info" OnClick="back();">กลับ</button>
+    <div class="container" style="padding-top :60px;">
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <button type="submit" class="btn btn-info" OnClick="back();">กลับ</button>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="name">เพิ่มรายการ</h3>
+            </div>
+        </div>
     </div>
 
     <div class="container" style="margin-top :30px;">
@@ -47,7 +53,6 @@
                                 Please enter a message in the textarea.
                               </div>
                             </div> -->
-
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">วัน/เดือน/ปี</label>
                     <div class="col-sm-4">
@@ -55,8 +60,7 @@
                     </div>
                     <label class="col-sm-2 col-form-label">ทะเบียนรถ</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" id="inputCodecar" placeholder="กก 1234 ตรัง"
-                            required="true">
+                        <input type="text" class="form-control" id="inputCodecar"  required="true">
                     </div>
                 </div>
 
