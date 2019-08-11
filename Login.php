@@ -28,10 +28,16 @@
             <div class="row text-center">
                 <div class="col-sm-12 mb-3 ">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="ชื่อผู้ใช้">
+                        <div class="form-group inputWithIcon">
+                            <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="ชื่อผู้ใช้">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="รหัสผ่าน">
+                        <div class="form-group inputWithIcon">
+                            <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="รหัสผ่าน">
+                            <i class="fas fa-key"></i>
+                        </div>
                     </div>
                 </div>
 
