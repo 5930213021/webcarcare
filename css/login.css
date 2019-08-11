@@ -7,10 +7,6 @@ body,
        padding-top: 80px;
        color: white;
     }
-    .rounded-shape{
-        height: 100%;
-        width: 50%;
-    }
     .name {
         font-size: 35px;
         color: rgb(33, 47, 61);
@@ -31,7 +27,7 @@ body,
     }
     .form-control {
         display: block;
-        width: 30%;
+        width: 100%;
         height: calc(2.25rem + 2px);
         padding: .375rem .75rem;
         font-size: 1rem;
