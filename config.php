@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "mcarcare";
+$password = "addmin";
 $db = "mcarcare_db";
 
 $connect = mysqli_connect($servername, $username, $password, $db);

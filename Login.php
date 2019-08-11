@@ -17,7 +17,7 @@ if($numrows==0){
 	$_SESSION["ID"] = $objResult["ID"];
 			session_write_close();
 			if($_SESSION["ID"]==9999){
-				header("location:admin.php");
+				header("location:addmin.php");
 			}else{
                 $_SESSION["ID"] = $objResult["ID"];
                 session_write_close();
