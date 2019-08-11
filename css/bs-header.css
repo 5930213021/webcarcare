@@ -1,3 +1,11 @@
+body,
+html{
+    margin: 0;
+    height: 100%;
+    /* background: -webkit-linear-gradient(left,#44B8DC,#6CD4F1,#6CD4F1); */
+   font-family: 'Kanit', sans-serif;
+   color: #44B8DC;
+}
 #tab{
     /* height: 15%; */
     /* width: auto; */
@@ -40,6 +48,12 @@
         font-size: 100%;
     }
 
-#colorjum{
-    background: rgb(108, 193, 236 ,0.5)
+#colortable{
+    background-color:rgb(108, 193, 236);
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: baseline;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
 }
