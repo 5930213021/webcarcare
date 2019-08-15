@@ -3,6 +3,7 @@
 
 <head>
   <!-- Required meta tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,11 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Kanit:200,300&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/bs-header.css">
-  <link rel="stylesheet" type="text/css" href="css/bs-type.css">
-
   <title>Mcarcare</title>
- 
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -30,7 +27,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-info" id="tab">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="tab">
     <a class="navbar-brand" href="home.php">
       <img src="image/font-white1.2.gif" alt="logo" class="home_logo">
     </a>
@@ -80,29 +77,6 @@
     </div>
   </nav>
 
-  <div class="container" style="margin-top :80px;">
-    <div class="headtopic"></div>
-    <h3 class="name">รายการให้บริการรถ</h3>
-  </div>
-  <div class="col-lg-12 text-center" id="typebutton">
-  <div class="btn-group" role="group" aria-label="Button group with nested dropdown text-center">
-    <button id="free" type="button" class="btn btn-1" OnClick="member();">สมาชิก</button>
-    <button id="paid" type="button" class="btn btn-2" OnClick="newmember();">ลูกค้าใหม่</button>
-  </div>
-  </div>
-
 </body>
-<script language="javascript">
-  function newmember() {
-    console.log("true");
-    window.location.href = ("addcustomer.php");
-  }
-</script>
-<script language="javascript">
-  function member() {
-    console.log("true");
-    window.location.href = ("memberpage.php");
-  }
-</script>
 
 </html>

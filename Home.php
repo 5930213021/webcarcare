@@ -16,8 +16,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/bs-header.css">
   <title>Mcarcare</title>
-  <!-- Function -->
-  <script src="js/script.js"></script>
+ 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -126,39 +125,10 @@
     }
     echo '</tbody>';
     echo '</table>';
-
-    // while ($user = mysqli_fetch_array($queryuser, MYSQLI_ASSOC)) {
-    //   echo '<tr>';
-    //   echo '</td><td>';
-    //   echo '<center>' . $user["ID"] . '<br>';
-    //   echo '</td><td>';
-    //   echo $user["Car_num"] . '<br>';
-    //   echo '</td><td>';
-    //   echo $user["FName"] . '    ' . $user["LName"] . '<br>';
-    //   echo '</td><td>';
-    //   echo $user["Phone"] . '<br>';
-    //   echo '</td><td>';
-    //   echo $user["Type"] . '<br>';
-    //   echo '</td><td>';
-    //   echo $user["Color"] . '<br>';
-    //   echo '</td><td>';
-    //   echo '</td></tr>';
-    // }
-    // echo '</table>';
-    // echo '</center>';
-
-
     ?>
-
-    <!-- <script language="javascript">
-      function seach() {
-        console.log("true");
-        window.location.href = ("resultseachpage.html");
-
-      }
-    </script> -->
-
-    <script language="javascript">
+  </div>
+</body>
+<script language="javascript">
       function change() {
         console.log("true");
         if (confirm("ท่านต้องการเปลี่ยนสถานะใช่หรือไม่")) {
@@ -232,7 +202,4 @@
         setInterval(GetClock, 1000);
       }
     </script>
-
-</body>
-
 </html>

@@ -14,7 +14,7 @@ if($result){
     if($numrows<=0){
         echo "<script>
         alert('หมายเลขทะเบียนนี้ยังไม่เป็นสมาชิก กรุณาสมัครสมาชิก');
-        window.location='walkinpage.php';
+        window.location='addcustomer.php';
         </script>";
     }else{
         $_SESSION['car_selected']=$_POST['carnum'];

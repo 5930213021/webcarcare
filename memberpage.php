@@ -60,7 +60,7 @@
 <script language="javascript">
         function back() {
             console.log("true");
-            window.location.href = ("Home.php");
+            window.location.href = ("selectpage.php");
 
         }
     </script>
