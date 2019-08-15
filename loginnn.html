@@ -12,9 +12,9 @@
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
     integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
-   <!-- Google Font -->
-   <link href="https://fonts.googleapis.com/css?family=Kanit:200,300&display=swap" rel="stylesheet">
-   
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit:200,300&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/bs-header.css">
   <title>Mcarcare</title>
 
@@ -30,6 +30,8 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -47,31 +49,31 @@
     <div class="row text-center">
       <div class="col-sm-12 mb-3 ">
         <div class="form-group">
-            <div class="form-group inputWithIcon">
-          <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId"
-            placeholder="ชื่อผู้ใช้">
+          <div class="form-group inputWithIcon">
+            <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId"
+              placeholder="ชื่อผู้ใช้">
             <i class="fas fa-user"></i>
-            </div>
+          </div>
         </div>
         <div class="form-group">
-            <div class="form-group inputWithIcon">
-          <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
-            placeholder="รหัสผ่าน">
+          <div class="form-group inputWithIcon">
+            <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
+              placeholder="รหัสผ่าน">
             <i class="fas fa-key"></i>
-            </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-12 mb-4">
         <button type="button" class="btn btn-1" onclick="home();">เข้าสู่ระบบ</button>
       </div>
       <div class="col-sm-12">
-          <div class="d-flex justify-content-center links">
-              หากคุณยังไม่เคยเข้าใช้งานกรุณา
+        <div class="d-flex justify-content-center links">
+          หากคุณยังไม่เคยเข้าใช้งานกรุณา
           <a href="register.html" class="link">สมัครสมาชิก</a>
-          &nbsp; ,คุณ 
+          &nbsp; ,คุณ
           <a href="forgotpassword.html">ลืมรหัสผ่าน?</a>
-          </div>
         </div>
+      </div>
     </div>
 
 
@@ -79,11 +81,27 @@
 
 </body>
 <script>
-    function home(){     
-      console.log("true");
-      window.location.href = ("home.html");
+  function home() {
+    console.log("true");
+    window.location.href = ("home.html");
 
+  }
+
+  const axios = require('axios');
+
+  async function makeRequest() {
+
+    const config = {
+      method: 'get',
+      url: 'http://localhost:8080/appstore'
     }
-    </script>
+
+    let res = await axios(config)
+
+    console.log(res.status);
+  }
+
+  makeRequest();
+</script>
 
 </html>
