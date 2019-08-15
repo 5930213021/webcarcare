@@ -13,7 +13,7 @@ if($result){
     $carnumber=$row['Car_num'];
     if($numrows<=0){
         echo "<script>
-        alert('กรุณาตรวจสอบ ชื่อผู้ใช้หรือรหัสผ่าน');
+        alert('หมายเลขทะเบียนนี้ยังไม่เป็นสมาชิก กรุณาสมัครสมาชิก');
         window.location='walkinpage.php';
         </script>";
     }else{

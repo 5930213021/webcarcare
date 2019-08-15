@@ -2,220 +2,128 @@
 <html>
 
 <head>
-  <title>Home Page</title>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
-    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <!-- Required meta tags -->
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit:200,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/bs-header.css">
+  <title>Mcarcare</title>
+  <!-- Function -->
+  <script src="js/script.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-danger navbar-danger ">
-    <a class="navbar-brand" href="#">
-      <img src="pic/logo.gif" class="home_logo" alt="Logo">
-
-
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="tab">
+    <a class="navbar-brand" href="home.php">
+      <img src="image/font-white1.2.gif" alt="logo" class="home_logo">
     </a>
-
-
-    <input class="form-control mr-sm-3" type="text" placeholder="กรุณากรอกหมายเลขทะเบียนรถ">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="button" name="button" OnClick="seach();">ค้นหา</button>
-
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <i class='fas fa-home' style='font-size:37px;color:#f39c12'></i>
-          <a class="nav-link" href="Homepage.html">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="nav-item active">
-          &nbsp; <i class='fas fa-file-alt' style='font-size:37px;color:#f39c12'></i>
-          <a class="nav-link" href="reportpage.html">รายงาน
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="nav-item active">
-          &nbsp;<i class="fas fa-bullhorn" style='font-size:37px; color:#f39c12'></i>
-          <a class="nav-link" href="chatpage.html">ประกาศ
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="dropdown">
-          <div class="nav-item active">
-            &nbsp;<div class="fas fa-cogs dropdown-toggle" data-toggle="dropdown" type="button"
-              style='font-size:37px; color:#f39c12'></div><br>
-            <div class="dropdown-menu " >
-              <a class="dropdown-item" href="adduserpage.html">เพิ่มสมาชิก</a>
-                 <a class=" dropdown-item   " href="loginpage.html" >ออกจากระบบ</a>
-              
-            </div>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+      <input class="form-control mr-sm-3" id="myInput" type="text" placeholder="กรุณากรอกหมายเลขทะเบียนรถ" name="name">
+      <button class="btn btn-outline-light" type="text" name="button" OnClick="seach();">ค้นหา</button>
+
+      <ul class="navbar-nav text-uppercase" id="ml" >
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="report.php">
+            <i class="fas fa-file-alt"></i>
+            รายงาน
+          </a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="chat.php">
+            <i class="fas fa-bullhorn"></i>
+            ประกาศ</a>
+        </li>
+        <li class="nav-item dropleft">
+          <a class="nav-link  active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cogs"></i>
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="register.php">เพิ่มสมาชิก</a>
+            <a class="dropdown-item" href="#">ออกจากระบบ</a>
           </div>
-        </div>
-
-
-
+        </li>
       </ul>
-
     </div>
   </nav>
+
+  <div class="container" style="margin-top :80px;">
+    <div class="headtopic"></div>
+    <h2 class="name">ผลการค้นหาหมายเลขทะเบียนรถ</h2>
+
+  </div>
+
   <div class="head">
-    <center>
-      <h2>ผลการค้นหาหมายเลขทะเบียนรถ </h2>
-    </center>
     <?php
-include  'config.php';
-$name = $_POST['name'];
-echo '<center>';
-$sqlsech = "SELECT * FROM customer WHERE Car_num LIKE '%$name%' ";
-$resultsech = mysqli_query($connect,$sqlsech);
-echo'<div class="container" style="overflow-x:auto; text-align: center;"> ';
-echo'<table border="2"  bgcolor="white;" class="table">';
-echo '<tr><td>';
-echo "วันเดือนปี";
-echo '</td><td>';
-echo "เลขทะเบียนรถ";
-echo '</td><td>';
-echo "ชื่อเจ้าของรถ";
-echo '</td><td>';
-echo "เบอร์โทรศัพท์";
-echo '</td><td>';
-echo "ประเภท";
-echo '</td><td>';
-echo "สี";
-echo '</td><td>';
-echo '</td></tr>';
-while($sech= mysqli_fetch_array( $resultsech)){
+    include  'config.php';
+    $name = $_POST['name'];
+    $sqlsech = "SELECT * FROM customer WHERE Car_num LIKE '%$name%' ";
+    $resultsech = mysqli_query($connect, $sqlsech);
+
+    echo '<table table-hover class="table">';
+    echo '<thead id="colortable">';
     echo '<tr>';
-    echo '</td><td>';
-echo '<center>'.$sech["ID"].'<br>';
-echo '</td><td>';
-echo $sech["Car_num"].'<br>';
-echo '</td><td>';
-echo $sech["FName"].'    '.$sech["LName"].'<br>';
-echo '</td><td>';
-echo $sech["Phone"].'<br>';
-echo '</td><td>';
-echo $sech["Type"].'<br>';
-echo '</td><td>';
-echo $sech["Color"].'<br>';
-echo '</td><td>';
-echo '</td></tr>';
-}
-echo '</table>';
-echo '</center>';
+    echo '<th scope="col">ลำดับ</th>';
+    echo '<th>เลขทะเบียนรถ</th>';
+    echo '<th>ชื่อเจ้าของรถ</th>';
+    echo '<th>เบอร์โทรศัพท์</th>';
+    echo '<th>ประเภท</th>';
+    echo '<th>สี</th>';
+    echo '</tr>';
+    echo '</thead>';
 
-
-?>
-    <!-- <div class="container" style="overflow-x:auto; text-align: center;">
-        <table border ="2"   width = "60%" height ="20%" bgcolor = "pink" class="table">
-          <thead>
-            <tr bgcolor = "pink">
-              <th>วันเดือนปี</th>
-              <th>เลขทะเบียนรถ</th>
-              <th>ชื่อเจ้าของรถ</th>
-              <th>เบอร์โทรศัพท์</th>
-              <th>ประเภท/สี</th>
-              <th>รายการที่ลูกค้าใช้บริการ</th>
-              <th>ระดับความสกปรก</th>
-              <th>ขนาดของรถ</th>
-              <th>สถานะของรถ</th>
-             
-             
-    
-            </tr>
-            <tr>
-              <th>13/03/62</th>
-              <th>หก333 </th>
-              <th>สมจิตร สมใจ</th>
-              <th>0626960144</th>
-              <th>เก๋ง/แดง</th>
-              <th>ล้างรถ ขัดสี</th>
-              <th>มาก</th>
-              <th>เล็ก</th>
-              <th><input  type="button"  value="สภานะของรถ" name="status" onclick="change()"> </th>
-             
-    
-            </tr>
-            <tr>
-              <th>13/03/62</th>
-              <th> หก333</th>
-              <th>สุข สบาย</th>
-              <th>0626960144</th>
-              <th>กะบะ/ดำ</th>
-              <th>ขัดสี</th>
-              <th>น้อย</th>
-              <th>ใหญ่</th>
-              <th><input  type="button"  value="สภานะของรถ" name="status" onclick="change()"></th>
-             
-    
-            </tr>
-            <tr>
-              <th>13/03/62</th>
-              <th>หก333   </th>
-              <th>สมจิตร สมใจ</th>
-              <th>0626960144</th>
-              <th>เก๋ง/แดง</th>
-              <th>ล้างรถ ขัดสี</th>
-              <th>มาก</th>
-              <th>เล็ก</th>
-              <th><input  type="button"  value="สภานะของรถ" name="status" onclick="change()"></th>
-             
-    
-            </tr>
-            <tr>
-              <th>13/03/62</th>
-              <th> หก333 </th>
-              <th>สุข สบาย</th>
-              <th>0626960144</th>
-              <th>กะบะ/ดำ</th>
-              <th>ขัดสี</th>
-              <th>น้อย</th>
-              <th>ใหญ่</th>
-              <th><input  type="button"  value="สภานะของรถ" name="status" onclick="change()"></th>
-             
-    
-            </tr>
-    
-    
-          </thead>
-         
-        </table>
-        
-    
-       
-      </div>
-</div> -->
-<script language="javascript">
-    function seach(){     
-        console.log("true");
-      window.location.href = ("resultseachpage.html" );
-  
+    echo '<tbody>';
+    while ($sech = mysqli_fetch_array($resultsech)) {
+    echo '<tr>';
+    echo '<td>'. $sech["ID"] .'</td>';
+    echo '<td>'. $sech["Car_num"] .'</td>';
+    echo '<td>'. $sech["FName"] .'  '.$sech["LName"] .'</td>';
+    echo '<td>'.$sech["Phone"] .'</td>';
+    echo '<td>'.$sech["Type"] .'</td>';
+    echo '<td>'.$sech["Color"] .'</td>';
+    echo '</tr>';
     }
+    echo '</table>';
+
+
+
+    ?>
+
+    <script language="javascript">
+      function seach() {
+        console.log("true");
+        window.location.href = ("resultseachpage.html");
+
+      }
     </script>
-     <script>
-      $(document).ready(function () {
+    <script>
+      $(document).ready(function() {
         $(".dropdown-toggle").dropdown();
       });
     </script>
-   
+
 </body>
 
 </html>
