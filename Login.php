@@ -56,7 +56,7 @@
                         หากคุณยังไม่เคยเข้าใช้งานกรุณา
                         <a href="siguppage.php" class="link">สมัครสมาชิก</a>
                         &nbsp; ,คุณ
-                        <a href="forgotpassword.html">ลืมรหัสผ่าน?</a>
+                        <a href="forgotpassword.php">ลืมรหัสผ่าน?</a>
                     </div>
                 </div>
             </div>

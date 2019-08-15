@@ -31,7 +31,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="tab">
-    <a class="navbar-brand" href="home.html">
+    <a class="navbar-brand" href="home.php">
       <img src="image/font-white1.2.gif" alt="logo" class="home_logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav text-uppercase" id="ml" style="margin-left: 25%;" >
         <li class="nav-item mr-sm-3">
-          <a class="nav-link" href="report.html">
+          <a class="nav-link" href="report.php">
             <i class="fas fa-file-alt"></i>
             รายงาน
           </a>

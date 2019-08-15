@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,45 +22,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
-    <div class="container" style="padding-top :30px;">
-        <div class="form-group row">
-            <div class="col-md-12 mb-3 text-center">
-                <h3 class="name">กรุณากรอกหมายเลขทะเบียนรถ</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" style="margin-top :30px;">
-        <div class="row text-center">
-            <div class="col-sm-12 mb-2 ">
-            
-                    <?php
-                    echo '<form action="member.php" method="post" name="brw_form" >';
-                    echo ' <div class="form-group inputWithIcon">';
-                    echo '<input class="form-control"  id="myInput" name="carnum" type="text" placeholder="หมายเลขทะเบียนรถ">';
-                    echo '<i class="fas fa-envelope"></i>';  
-                    echo '</div>';
-                    echo '<div class="col-sm-12 mt-4">';
-                    echo '<button class="btn btn btn-info" name="submit" type="submit" style="margin-right: 15px;">ค้นหา</button>';
-                    echo '<button class="btn btn btn-warning" type="button" name="button"  OnClick="back();" class="ml-2">กลับ</button>';
-                    echo '</div>';
-                    echo '</form>';
-                    ?>
-                    
-            </div>
-        </div>
-    </div>
 </body>
+<div class="container" style="padding-top :60px;">
+    <div class="form-group row">
+        <!-- <div class="col-sm-4 mr-3">
+            <button type="submit" class="btn btn-info" OnClick="back();">กลับ</button>
+        </div> -->
+        <div class="col-md-12 mb-3 text-center">
+            <h3 class="name">ลืมรหัสผ่าน</h3>
+        </div>
+    </div>
+</div>
 
-<script language="javascript">
-        function back() {
-            console.log("true");
-            window.location.href = ("Home.php");
+<div class="container" style="margin-top :30px;">
 
-        }
-    </script>
+
+    <div class="row text-center">
+        <div class="col-sm-12 mb-2 ">
+            <div class="form-group inputWithIcon">
+                <input type="text" class="form-control" id="inputname" placeholder="กรอกเมลของคุณ" required="true">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <label for="">ระบบจะส่งรหัสผ่านของคุณไปยังเมล</label>
+        </div>
+        <div class="col-sm-12 ">
+            <button type="button" class="btn btn btn-info" onclick="back()" style="margin-right: 15px;">ยืนยัน</button>
+            <button type="button" class="btn btn btn-warning" onclick="back()">กลับ</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    function back() {
+        console.log("true");
+        window.location.href = ("login.php");
+    }
+</script>
+
 </html>

@@ -40,26 +40,24 @@
         </div>
     </div>
 
-    <div class="container" style="margin-top :30px;">
+    <div class="container" style="margin-top :50px;">
         <div class="jumbotron" id="colorjum">
-            <form  action='work.php' method="post" id="mainform" name='form' enctype="multipart/form-data">
-            <div class="form-group row">
+            <form action='work.php' method="post" id="mainform" name='form' enctype="multipart/form-data">
+                <div class="form-group row">
                     <label class="col-form-label col-sm-2 pt-0">รายการที่ลูกค้าเลือก</label>
                     <div class="col-sm-2">
                         <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" name="wash_engin" class="custom-control-input" id="defaultCheck1"
-                                value="option1" required="true">
+                            <input type="checkbox" name="wash_engin" class="custom-control-input" id="defaultCheck1" value="option1">
                             <label class="custom-control-label" for="defaultCheck1">
                                 ล้างห้องเครื่อง
                             </label>
                         </div>
                     </div>
-                    
+
 
                     <div class="col-sm-2">
                         <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" name="spray_under" class="custom-control-input" id="defaultCheck2"
-                                value="option2" required="true">
+                            <input type="checkbox" name="spray_under" class="custom-control-input" id="defaultCheck2" value="option2">
                             <label class="custom-control-label" for="defaultCheck2">
                                 ล้างอัดฉีดช่วงล้าง
                             </label>
@@ -68,8 +66,7 @@
 
                     <div class="col-sm-2">
                         <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" name="clean_dust" class="custom-control-input" id="defaultCheck3"
-                                value="option3" required="true">
+                            <input type="checkbox" name="clean_dust" class="custom-control-input" id="defaultCheck3" value="option3">
                             <label class="custom-control-label" for="defaultCheck3">
                                 ล้างสีดูดฝุ่น
                             </label>
@@ -78,8 +75,7 @@
 
                     <div class="col-sm-2">
                         <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" name="wash_asphalt" class="custom-control-input" id="defaultCheck4"
-                                value="option4" required="true">
+                            <input type="checkbox" name="wash_asphalt" class="custom-control-input" id="defaultCheck4" value="option4">
                             <label class="custom-control-label" for="defaultCheck4">
                                 ล้างยางมะตอย
                             </label>
@@ -88,8 +84,7 @@
 
                     <div class="col-sm-2">
                         <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" name="chang_fuel" class="custom-control-input" id="defaultCheck5"
-                                value="option5" required="true">
+                            <input type="checkbox" name="chang_fuel" class="custom-control-input" id="defaultCheck5" value="option5">
                             <label class="custom-control-label" for="defaultCheck5">
                                 ล้างยางมะตอย
                             </label>
@@ -101,8 +96,7 @@
                     <label class="col-sm-2 col-form-label">ระดับความสกปรก</label>
                     <div class="col-sm-1">
                         <div class="custom-control custom-radio" style="margin-top: 8px;">
-                            <input type="radio" class="custom-control-input" id="customradioValidation1"
-                                name="level" value='2' required="true">
+                            <input type="radio" class="custom-control-input" id="customradioValidation1" name="level" value='2' required="true">
                             <label class="custom-control-label" for="customradioValidation1">
                                 มาก
                             </label>
@@ -110,8 +104,7 @@
                     </div>
                     <div class="col-sm-1">
                         <div class="custom-control custom-radio" style="margin-top: 8px;">
-                            <input type="radio" class="custom-control-input" id="customradioValidation2"
-                                name="level" value='1' required="true">
+                            <input type="radio" class="custom-control-input" id="customradioValidation2" name="level" value='1' required="true">
                             <label class="custom-control-label" for="customradioValidation2">
                                 น้อย
                             </label>
@@ -123,8 +116,7 @@
                     <label class="col-sm-2 col-form-label">ขนาดรถ</label>
                     <div class="col-sm-1">
                         <div class="custom-control custom-radio" style="margin-top: 8px;">
-                            <input type="radio" class="custom-control-input" id="customradioValidation3"
-                                name="size" value='2' required="true">
+                            <input type="radio" class="custom-control-input" id="customradioValidation3" name="size" value='2' required="true">
                             <label class="custom-control-label" for="customradioValidation3">
                                 มาก
                             </label>
@@ -132,8 +124,7 @@
                     </div>
                     <div class="col-sm-1">
                         <div class="custom-control custom-radio" style="margin-top: 8px;">
-                            <input type="radio" class="custom-control-input" id="customradioValidation4"
-                                name="size" value='1' required="true">
+                            <input type="radio" class="custom-control-input" id="customradioValidation4" name="size" value='1' required="true">
                             <label class="custom-control-label" for="customradioValidation4">
                                 น้อย
                             </label>
@@ -151,35 +142,14 @@
     </div>
 
 
-    <!-- <div class="container h-100">
-        <div class="d-flex justify-content-center h-100">
-            <center>
-                <h2>หมายเลขทะเบียนรถ <?php echo   $_SESSION['car_selected'] ?> </h2>
-            </center>
-
-
-            <div class="d-flex justify-content-center form_container">
-                <form action='work.php' method='post' id="mainform" name='form' enctype="multipart/form-data">
-                    <input type="checkbox" name="wash_engin"> ล้างห้องเครื่อง<br>
-                    <input type="checkbox" name="spray_under"> ล้างอัดฉีดช่วงล้าง<br>
-                    <input type="checkbox" name="clean_dust"> ล้างสีดูดฝุ่น <br>
-                    <input type="checkbox" name="wash_asphalt"> ล้างยางมะตอย<br>
-                    <input type="checkbox" name="chang_fuel"> ถ่ายน้ำเครื่อง<br>
-                    ระดับความสกปรก<input type='radio' name='level' value='1'>น้อย
-                    <input type='radio' name='level' value='2'>มาก<br><br>
-                    ขนาดของรถ<input type='radio' name='size' value='1'>เล็ก
-                    <input type='radio' name='size' value='2'>ใหญ่<br><br>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
-                <script language="javascript">
-                    function Back() {
-                        console.log("true");
-                        window.location.href = ("Home.php");
-
-                    }
-                </script> -->
 
 </body>
+<script>
+    function back() {
+        console.log("true");
+        window.location.href = ("memberpage.php");
+
+    }
+</script>
 
 </html>
