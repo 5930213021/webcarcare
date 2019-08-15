@@ -147,7 +147,7 @@
 <script>
     function back() {
         console.log("true");
-        window.location.href = ("memberpage.php");
+        window.location.href = ("home.php");
 
     }
 </script>
