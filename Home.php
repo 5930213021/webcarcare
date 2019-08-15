@@ -37,13 +37,8 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <?php
-    // echo '<form action="search.php" method="post" name="brw_form" >';
-    // echo ' <input class="form-control mr-sm-3"  id="myInput" name="name" type="text" placeholder="กรุณากรอกหมายเลขทะเบียนรถ">';
-    // echo '<input class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit"  value = "ค้นหา">';
-    // echo '</form>';
-    ?>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
 
     <?php
     echo '<form action="search.php" method="post" name="brw_form" style="width:50%">';
@@ -57,7 +52,7 @@
     <!-- <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav text-uppercase" id="ml" style="margin-left: 25%;" >
         <li class="nav-item mr-sm-3">
           <a class="nav-link" href="report.php">
@@ -77,7 +72,7 @@
             <i class="fas fa-caret-down"></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="siguppage.php">เพิ่มสมาชิก</a>
+            <a class="dropdown-item" href="signuppage2.php">เพิ่มสมาชิก</a>
             <a class="dropdown-item" href="login.php">ออกจากระบบ</a>
           </div>
         </li>

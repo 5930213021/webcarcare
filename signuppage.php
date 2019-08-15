@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <form action='sigup.php' method='post' id="mainform" name='form' enctype="multipart/form-data">
+    <form action='signup.php' method='post' id="mainform" name='form' enctype="multipart/form-data">
         <div class="container" style="margin-top :30px;">
             <div class="row text-center">
                 <div class="col-sm-12 mb-2 ">

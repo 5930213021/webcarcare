@@ -18,7 +18,7 @@ if($result){
 	else{
 	echo "<script type='text/javascript'>";
 	echo "alert('เกิดข้อผิดพลาด โปรดทำการสมัครใหม่อีกครั้ง".mysqli_error($connect)."');";
-	echo "window.location = 'siguppage.php'; ";
+	echo "window.location = 'signuppage.php'; ";
 	echo "</script>";
 	}
 mysqli_close($connect);

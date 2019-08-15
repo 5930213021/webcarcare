@@ -54,7 +54,7 @@
                 <div class="col-sm-12">
                     <div class="d-flex justify-content-center links">
                         หากคุณยังไม่เคยเข้าใช้งานกรุณา
-                        <a href="siguppage.php" class="link">สมัครสมาชิก</a>
+                        <a href="signuppage.php" class="link">สมัครสมาชิก</a>
                         &nbsp; ,คุณ
                         <a href="forgotpassword.php">ลืมรหัสผ่าน?</a>
                     </div>
