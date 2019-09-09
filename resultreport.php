@@ -95,7 +95,7 @@
             <div class="row text-center">
                 <div class="col-md-9 mb-2">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="datepicker"  name="na2" onclick="">
+                        <input type="text" class="form-control" id="datepicker" name="na2">
                         <script>
                             $('#datepicker').datepicker({
                                 uiLibrary: 'bootstrap4'
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 mb-5">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" name="button" onclick="result();">ค้นหา
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" name="button" OnClick="">ค้นหา
                     </button>
                 </div>
             </div>
@@ -127,7 +127,7 @@
             </tr>
         </thead>
 
-        <!-- <tbody>
+        <tbody>
             <tr>
                 <th scope="row">2019-08-13 14:56:51</th>
                 <td>กย 1234 </td>
@@ -153,7 +153,7 @@
             </tr>
 
         
-        </tbody> -->
+        </tbody>
         <!-- <thead id="colortable">
             <tr>
                 <th scope="col">#</th>
@@ -204,14 +204,6 @@
 
     }
 </script>
-
-<script language="javascript">
-      function result() {
-        console.log("true");
-        window.location.href = ("resultreport.php");
-
-      }
-    </script>
 <script>
     $(document).ready(function() {
         $(".dropdown-toggle").dropdown();

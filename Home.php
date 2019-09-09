@@ -100,7 +100,7 @@
     echo '<table table-hover class="table">';
     echo '<thead id="colortable">';
     echo '<tr>';
-    echo '<th scope="col">ลำดับ</th>';
+    echo '<th scope="col">วัน/เดือน/ปี</th>';
     echo '<th>เลขทะเบียนรถ</th>';
     echo '<th>ชื่อเจ้าของรถ</th>';
     echo '<th>เบอร์โทรศัพท์</th>';

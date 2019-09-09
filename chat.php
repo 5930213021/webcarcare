@@ -92,7 +92,7 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="ข้อความต่างๆ.."></textarea>
             </div>
             <div class="col-sm-12 mt-5 text-center">
-              <button class="btn btn-1" name="submit" type="submit" style="margin-right: 15px;">ค้นหา</button>
+              <button class="btn btn-1" name="submit" type="submit" style="margin-right: 15px;" OnClick="back();">ส่งข้อความ</button>
               <button class="btn btn-2" type="button" name="button"  OnClick="back();" class="ml-2">กลับ</button>
             </div>
 
